@@ -18,7 +18,7 @@
             <div>
                 @if (Auth::user()->id == $micropost->user_id)
                     {!! Form::open(['route' => ['microposts.destroy', $micropost->id], 'method' => 'delete']) !!}
-                        {!! Form::submit('🚮', ['class' => 'btn btn-info btn-xs']) !!}
+                        {!! Form::submit('🚮', ['class' => 'btn btn-info btn-sm']) !!}
                     {!! Form::close() !!}
                 @endif
             </div>
